@@ -1,26 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+	
 	<xsl:template match="/">
 		<html>
-			<head></head>
-			<body>
-				<xsl:apply-templates/>
-			</body>
+			<xsl:apply-templates/>
 		</html>
+	
+	
 	</xsl:template>
+	
 	<xsl:template match="book">
-		<h2>
-		<p>Obra:
+		<h3>
 		<xsl:value-of select="title"></xsl:value-of>
-		</p>
-		</h2>
-		<p>Año:
+		</h3>
+		<h2>
 		<xsl:value-of select="year"></xsl:value-of>
-		</p>
-		<p> Precio:
-			<span>
-		<xsl:value-of select="price"></xsl:value-of> 
-		</span>euros
-		</p>
+		</h2>
+		<h2>
+		<xsl:value-of select="price"></xsl:value-of>
+		</h2>
 	</xsl:template>
 </xsl:stylesheet>
