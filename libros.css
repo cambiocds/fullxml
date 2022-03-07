@@ -1,0 +1,12 @@
+year,price{
+    display: list-item;
+    list-style: disc inside;
+    margin-left: 20px;
+}
+price{
+    font-weight: bold;
+    background-color: gold;
+}
+p{
+    color: blue;
+}
